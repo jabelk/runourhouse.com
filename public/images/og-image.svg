@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#FEFAF6"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#2A9D8F"/>
+  <text x="600" y="260" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="72" fill="#2D3436">Run Our House</text>
+  <text x="600" y="340" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="32" fill="#636E72">Your family's AI assistant on WhatsApp</text>
+  <text x="600" y="420" text-anchor="middle" font-family="sans-serif" font-weight="500" font-size="24" fill="#2A9D8F">Calendars &bull; Meals &bull; Budget &bull; Groceries &bull; Tasks</text>
+  <text x="600" y="560" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="20" fill="#636E72">runourhouse.com</text>
+</svg>
