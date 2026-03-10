@@ -700,6 +700,53 @@ section {
    Page-Specific Components
    ============================================ */
 
+/* Page Images */
+.page-image {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  width: 100%;
+  height: auto;
+}
+
+.page-image-wide {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.hero-image-wrapper {
+  margin-top: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-image {
+  max-width: 480px;
+  margin: 2rem auto;
+  display: block;
+}
+
+.section-image-float {
+  max-width: 360px;
+  margin: 0 auto 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .page-image-wide { height: 360px; }
+
+  .section-image-float {
+    float: right;
+    margin: 0 0 1rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-image-wide { height: 420px; }
+}
+
 /* Hero */
 .hero {
   padding: 3rem 0 2.5rem;
