@@ -86,6 +86,10 @@ section {
   padding: 3rem 0;
 }
 
+section[id] {
+  scroll-margin-top: var(--nav-height);
+}
+
 .section-alt {
   background: var(--color-bg-alt);
 }

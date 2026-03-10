@@ -37,8 +37,59 @@
     "priceRange": "$99-$399/mo",
     "provider": {
       "@type": "Organization",
-      "name": "Sierra Code Co"
+      "name": "Sierra Code Co",
+      "url": "https://sierracodeco.com"
     }
+  }
+  </script>
+
+  <!-- JSON-LD FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What's included in each plan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every plan includes your own AI assistant on WhatsApp that knows your family. Core covers calendar and meals. Complete adds budget tracking, grocery management, and task lists. Concierge adds a monthly strategy call and priority support."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I switch plans?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Upgrade or downgrade anytime — changes take effect on your next billing cycle. Most families start with Complete."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the setup fee for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We personally build your family profile, connect all your tools (calendar, budget, grocery list), test everything thoroughly, and do a live walkthrough with you. It's hands-on, white-glove setup — not a DIY onboarding flow."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if I want to cancel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cancel anytime with 30 days notice. We remove our access to your accounts, and all your data stays exactly where it is — in your own calendar, budget app, and grocery list. Nothing is lost."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data safe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your data stays in YOUR accounts — your Google Calendar, your YNAB, your AnyList. We orchestrate between them but don't store your personal data. All communication is encrypted, and you can disconnect any integration anytime."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -51,9 +102,9 @@
     <div class="container">
       <a href="/" class="nav-logo">Run Our House</a>
       <div class="nav-links">
-        <a href="how-it-works.html">How It Works</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="about.html">About</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
         <a href="https://calendly.com/runourhouse/discovery" class="btn btn-primary btn-sm">Book a Free Call</a>
       </div>
       <button class="nav-toggle" aria-label="Toggle navigation menu" onclick="document.getElementById('nav-mobile').classList.toggle('open')">
@@ -63,9 +114,9 @@
       </button>
     </div>
     <div class="nav-mobile" id="nav-mobile">
-      <a href="how-it-works.html">How It Works</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="about.html">About</a>
+      <a href="#how-it-works" onclick="document.getElementById('nav-mobile').classList.remove('open')">How It Works</a>
+      <a href="#pricing" onclick="document.getElementById('nav-mobile').classList.remove('open')">Pricing</a>
+      <a href="#about" onclick="document.getElementById('nav-mobile').classList.remove('open')">About</a>
       <a href="https://calendly.com/runourhouse/discovery" class="btn btn-primary nav-cta-mobile">Book a Free Call</a>
     </div>
   </nav>
@@ -195,61 +246,465 @@
     </section>
 
     <!-- How It Works -->
-    <section class="section-alt">
+    <section id="how-it-works" class="section-alt">
       <div class="container">
-        <h2 class="section-heading">How it works</h2>
+        <h2 class="section-heading">From first call to daily assistant in 48 hours</h2>
+        <p class="section-heading">We handle all the technical setup. You just answer a few questions about your family.</p>
         <div class="steps-grid">
           <div class="step">
             <span class="step-number">1</span>
             <div class="step-content">
-              <h3>Talk to us</h3>
-              <p>Book a free 20-minute discovery call. We'll learn about your family, your routines, and what's driving you crazy.</p>
+              <h3>Book a discovery call</h3>
+              <p>A free 20-minute video call where we learn about your family — who's in it, what your routines look like, and what's driving you crazy. No technical knowledge needed.</p>
             </div>
           </div>
           <div class="step">
             <span class="step-number">2</span>
             <div class="step-content">
-              <h3>We set it up</h3>
-              <p>We configure your assistant with your calendar, budget tools, and preferences. You don't touch a thing.</p>
+              <h3>We build your family profile</h3>
+              <p>Based on our call, we set up your assistant with your family's names, schedules, meal preferences, and routines. This is done entirely by us — you don't configure anything.</p>
             </div>
           </div>
           <div class="step">
             <span class="step-number">3</span>
             <div class="step-content">
+              <h3>We connect your tools</h3>
+              <p>We link your Google Calendar, budget app (YNAB), grocery list (AnyList), and task manager (Notion) to your assistant. Only WhatsApp is required — everything else is optional and added at your pace.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-number">4</span>
+            <div class="step-content">
               <h3>Text your assistant</h3>
-              <p>Open WhatsApp and say hi. Your assistant is ready to help with meals, schedules, groceries, budgets, and more.</p>
+              <p>Open your family's WhatsApp group and say hi. Your assistant is ready to help with meals, schedules, grocery lists, budgets, reminders, and anything else your family throws at it.</p>
             </div>
           </div>
         </div>
-        <p><a href="how-it-works.html">See the full process</a></p>
+      </div>
+    </section>
+
+    <!-- More Conversations: Grocery + Budget -->
+    <section>
+      <div class="container">
+        <h2 class="section-heading">Your assistant handles it all</h2>
+        <img src="images/phone-chat.jpg" alt="A person texting their family assistant from the couch — managing household tasks from anywhere." class="section-image page-image" width="1024" height="1024" loading="lazy">
+        <div class="chat-showcase">
+
+          <!-- Example C: Grocery List -->
+          <div class="chat-example">
+            <span class="context-label">Grocery List</span>
+            <div class="chat-window">
+              <div class="chat-header">Run Our House</div>
+              <div class="chat-messages">
+                <div class="message sent">
+                  <span class="sender">Sarah</span>
+                  <p>We need groceries for the week. Can you put together a list?</p>
+                  <span class="time">10:15 AM</span>
+                </div>
+                <div class="message received">
+                  <span class="sender">Run Our House</span>
+                  <p>Based on this week's meal plan, here's what you need:<br><br>Protein: ground turkey, salmon fillets<br>Produce: spinach, sweet potatoes, avocados, bananas, blueberries<br>Dairy: Greek yogurt, shredded cheese<br>Pantry: whole wheat bread, pasta<br><br>You usually get milk and eggs — you bought those 9 days ago. Want me to add them?</p>
+                  <span class="time">10:15 AM</span>
+                </div>
+                <div class="message sent">
+                  <span class="sender">Sarah</span>
+                  <p>Yes and add goldfish crackers, the girls are obsessed</p>
+                  <span class="time">10:16 AM</span>
+                </div>
+                <div class="message received">
+                  <span class="sender">Run Our House</span>
+                  <p>Added everything to your grocery list — 15 items total. Ready for your next Whole Foods order.</p>
+                  <span class="time">10:16 AM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Example D: Budget Check -->
+          <div class="chat-example">
+            <span class="context-label">Budget Insight</span>
+            <div class="chat-window">
+              <div class="chat-header">Run Our House</div>
+              <div class="chat-messages">
+                <div class="message sent">
+                  <span class="sender">Sarah</span>
+                  <p>How are we doing on the grocery budget this month?</p>
+                  <span class="time">2:30 PM</span>
+                </div>
+                <div class="message received">
+                  <span class="sender">Run Our House</span>
+                  <p>Through March 15th, you've spent about $380 on groceries. Your monthly budget is $600, so you have about $220 left for the second half.<br><br>That's actually $40 less than this point last month — the meal planning is helping! Your average weekly spend dropped from about $165 to $145.</p>
+                  <span class="time">2:30 PM</span>
+                </div>
+                <div class="message sent">
+                  <span class="sender">Sarah</span>
+                  <p>Nice! What about eating out?</p>
+                  <span class="time">2:31 PM</span>
+                </div>
+                <div class="message received">
+                  <span class="sender">Run Our House</span>
+                  <p>Dining out is at about $95 against a $200 budget — you're on track. The biggest expense was family pizza night last Friday, about $55.</p>
+                  <span class="time">2:31 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <p class="chat-disclaimer">Conversations shown are from real interactions. Names and details changed for privacy. Used with permission.</p>
+      </div>
+    </section>
+
+    <!-- Integrations -->
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="section-heading">Works with the tools you already use</h2>
+        <p class="section-heading">Only WhatsApp is required. Add integrations anytime.</p>
+        <div class="integrations-grid">
+          <div class="integration-card">
+            <div class="icon" aria-hidden="true">&#x1F4AC;</div>
+            <h4>WhatsApp</h4>
+            <p>Your main way to talk to your assistant. Just text like you'd text a friend.</p>
+            <span class="badge badge-required">Required</span>
+          </div>
+          <div class="integration-card">
+            <div class="icon" aria-hidden="true">&#x1F4C5;</div>
+            <h4>Google Calendar</h4>
+            <p>Sync all family calendars. See conflicts, add events, get reminders.</p>
+            <span class="badge badge-optional">Optional</span>
+          </div>
+          <div class="integration-card">
+            <div class="icon" aria-hidden="true">&#x1F4B0;</div>
+            <h4>YNAB</h4>
+            <p>Track spending against your budget. Get insights without opening the app.</p>
+            <span class="badge badge-optional">Optional</span>
+          </div>
+          <div class="integration-card">
+            <div class="icon" aria-hidden="true">&#x1F6D2;</div>
+            <h4>AnyList</h4>
+            <p>Build grocery lists from your meal plan. Send to your store with one message.</p>
+            <span class="badge badge-optional">Optional</span>
+          </div>
+          <div class="integration-card">
+            <div class="icon" aria-hidden="true">&#x1F4CB;</div>
+            <h4>Notion</h4>
+            <p>Track action items, meal plans, and family tasks in shared dashboards.</p>
+            <span class="badge badge-optional">Optional</span>
+          </div>
+          <div class="integration-card">
+            <div class="icon" aria-hidden="true">&#x1F4E7;</div>
+            <h4>Outlook</h4>
+            <p>Sync work calendars so your assistant sees the full picture.</p>
+            <span class="badge badge-optional">Optional</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+      <div class="container">
+        <h2 class="section-heading">Simple, transparent pricing</h2>
+        <p class="section-heading">Every plan includes your own AI family assistant on WhatsApp.</p>
+        <div class="pricing-grid">
+
+          <!-- Core -->
+          <div class="pricing-card">
+            <h3>Core</h3>
+            <p class="pricing-price">$99<span>/mo</span></p>
+            <p class="pricing-setup">$149 one-time setup</p>
+            <ul class="pricing-features">
+              <li>WhatsApp AI assistant</li>
+              <li>Google Calendar sync</li>
+              <li>Meal planning &amp; suggestions</li>
+              <li>Daily family briefings</li>
+              <li>Recipe recommendations</li>
+            </ul>
+            <a href="https://calendly.com/runourhouse/discovery" class="btn btn-outline">Book a Free Call</a>
+          </div>
+
+          <!-- Complete -->
+          <div class="pricing-card highlighted">
+            <span class="pricing-badge">Most Popular</span>
+            <h3>Complete</h3>
+            <p class="pricing-price">$199<span>/mo</span></p>
+            <p class="pricing-setup">$249 one-time setup</p>
+            <ul class="pricing-features">
+              <li>Everything in Core, plus:</li>
+              <li>YNAB budget tracking</li>
+              <li>Grocery list management (AnyList)</li>
+              <li>Action items &amp; task tracking (Notion)</li>
+              <li>Work calendar sync (Outlook)</li>
+              <li>Scheduled automations &amp; reminders</li>
+            </ul>
+            <a href="https://calendly.com/runourhouse/discovery" class="btn btn-primary">Book a Free Call</a>
+          </div>
+
+          <!-- Concierge -->
+          <div class="pricing-card">
+            <h3>Concierge</h3>
+            <p class="pricing-price">$399<span>/mo</span></p>
+            <p class="pricing-setup">$499 one-time setup</p>
+            <ul class="pricing-features">
+              <li>Everything in Complete, plus:</li>
+              <li>Monthly 30-min optimization call</li>
+              <li>Priority support</li>
+              <li>Custom automation rules</li>
+              <li>Proactive family insights</li>
+            </ul>
+            <a href="https://calendly.com/runourhouse/discovery" class="btn btn-outline">Book a Free Call</a>
+          </div>
+
+        </div>
+
+        <!-- Setup Fee Explanation -->
+        <div class="setup-explanation">
+          <h3>What does the setup fee cover?</h3>
+          <p>We build your family profile, connect your calendar, budget, and grocery tools, run thorough testing, and walk you through a personalized training session. Most families are live within 48 hours.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="section-heading">How does Run Our House compare?</h2>
+        <img src="images/family-calendar.jpg" alt="A busy family calendar covered in handwritten notes, magnets, and kids' drawings — the chaos that Run Our House replaces." class="section-image page-image" width="1024" height="1024" loading="lazy">
+        <div class="comparison-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Solution</th>
+                <th>Monthly Cost</th>
+                <th>Calendar</th>
+                <th>Budget</th>
+                <th>Meals</th>
+                <th>Grocery</th>
+                <th>Tasks</th>
+                <th>Always On</th>
+                <th>Setup Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row-highlight">
+                <td><strong>Run Our House</strong></td>
+                <td>$99-399/mo</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td>48 hours</td>
+              </tr>
+              <tr>
+                <td>Do it yourself</td>
+                <td>$0</td>
+                <td><span class="check">Manual</span></td>
+                <td><span class="cross">&#10005;</span></td>
+                <td><span class="cross">&#10005;</span></td>
+                <td><span class="cross">&#10005;</span></td>
+                <td><span class="check">Manual</span></td>
+                <td><span class="cross">&#10005;</span></td>
+                <td>Ongoing</td>
+              </tr>
+              <tr>
+                <td>5+ separate apps</td>
+                <td>$40-100/mo</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&#10005;</span></td>
+                <td><span class="cross">&#10005;</span></td>
+                <td>Hours/week</td>
+              </tr>
+              <tr>
+                <td>AI reminder app (e.g. Milo)</td>
+                <td>~$40/mo</td>
+                <td><span class="cross">&#10005;</span></td>
+                <td><span class="cross">&#10005;</span></td>
+                <td><span class="cross">&#10005;</span></td>
+                <td><span class="cross">&#10005;</span></td>
+                <td><span class="check">Reminders only</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td>Minutes</td>
+              </tr>
+              <tr>
+                <td>Human assistant</td>
+                <td>$500-1,500/mo</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td>1-2 weeks</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
     <!-- Social Proof -->
     <section>
       <div class="container">
+        <h2 class="section-heading">What families are saying</h2>
         <div class="testimonial">
           <blockquote>
-            <p>I used to lie awake running through tomorrow's schedule in my head. Now I just text the assistant and everything's handled. It's like having a second brain that actually works.</p>
+            <p>Before Run Our House, I had a running list in my head that never turned off — what's for dinner, who has what appointment, did we go over budget this week, do we need milk. Now I just text the assistant and it's handled. I meal plan in 30 seconds instead of 30 minutes. I actually know what we've spent without opening three apps. The biggest surprise? My husband started using it too. It's not just my mental load anymore — it's our family's shared brain.</p>
           </blockquote>
-          <p><strong>Sarah M., mom of two in Reno</strong></p>
-          <p>Saved 3+ hours a week on meal planning and scheduling</p>
+          <cite>Sarah M., mom of two in Reno</cite>
+          <p class="improvement">Saved 3+ hours per week on household management</p>
         </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="section-heading">Frequently asked questions</h2>
+        <div class="faq-list">
+
+          <details>
+            <summary>What's included in each plan?</summary>
+            <p>Every plan includes your own AI assistant on WhatsApp that knows your family. Core covers calendar and meals. Complete adds budget tracking, grocery management, and task lists. Concierge adds a monthly strategy call and priority support.</p>
+          </details>
+
+          <details>
+            <summary>Can I switch plans?</summary>
+            <p>Absolutely. Upgrade or downgrade anytime — changes take effect on your next billing cycle. Most families start with Complete.</p>
+          </details>
+
+          <details>
+            <summary>What's the setup fee for?</summary>
+            <p>We personally build your family profile, connect all your tools (calendar, budget, grocery list), test everything thoroughly, and do a live walkthrough with you. It's hands-on, white-glove setup — not a DIY onboarding flow.</p>
+          </details>
+
+          <details>
+            <summary>What if I want to cancel?</summary>
+            <p>Cancel anytime with 30 days notice. We remove our access to your accounts, and all your data stays exactly where it is — in your own calendar, budget app, and grocery list. Nothing is lost.</p>
+          </details>
+
+          <details>
+            <summary>Do I need all the integrations?</summary>
+            <p>Nope. Only WhatsApp is required. Start with just calendar and meals, then add budget tracking or grocery management whenever you're ready. Your assistant grows with you.</p>
+          </details>
+
+          <details>
+            <summary>Is my data safe?</summary>
+            <p>Your data stays in YOUR accounts — your Google Calendar, your YNAB, your AnyList. We orchestrate between them but don't store your personal data. All communication is encrypted, and you can disconnect any integration anytime.</p>
+          </details>
+
+          <details>
+            <summary>Do I need a WhatsApp account?</summary>
+            <p>Yes — WhatsApp is how you talk to your assistant. It's free, works on any smartphone, and most families already have it. If you don't, it takes about 2 minutes to set up.</p>
+          </details>
+
+          <details>
+            <summary>How quickly can I get started?</summary>
+            <p>Book a discovery call today, and your assistant can be live within 48 hours. Most of the setup happens on our end — you just answer a few questions about your family and routines.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-heading">Built by a parent, for parents</h2>
+        <img src="images/reno-local.jpg" alt="A Reno, Nevada neighborhood with the Sierra Nevada mountains in the background — where Run Our House was born." class="page-image-wide" width="1792" height="1024" loading="lazy">
+        <img src="images/jason-headshot.jpg" alt="Jason Belk, founder of Run Our House and Sierra Code Co." class="headshot" width="220" height="220" loading="lazy" style="margin-top:1.5rem;">
+        <p style="margin-top:1.5rem;">Run Our House started in one family's kitchen in Reno, Nevada. Jason, a software engineer and dad of two young girls, built an AI assistant for his own family after watching his wife Erin juggle calendars, meal planning, grocery lists, and budgets across five different apps — while also keeping track of everything in her head.</p>
+        <p>What started as a weekend project became something their family couldn't live without. Friends started asking "can I get one of those?" — and Run Our House was born. Every feature exists because a real family needed it, not because a product team hypothesized about it.</p>
+        <p>Run Our House is operated by Sierra Code Co, a software consultancy based in Reno, NV. Jason personally deploys and manages every family's assistant — this isn't a faceless SaaS product. When you have a question, you talk to the person who built it.</p>
+      </div>
+    </section>
+
+    <!-- Data Handling -->
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="section-heading">Your data stays yours</h2>
+        <p class="section-heading">We take privacy seriously. Here's exactly how your information is handled.</p>
+        <div class="trust-grid">
+          <div class="trust-item">
+            <span class="icon" aria-hidden="true">&#x1F512;</span>
+            <div>
+              <h3>Your data stays in YOUR accounts</h3>
+              <p>Your calendar events stay in Google Calendar. Your budget stays in YNAB. Your grocery list stays in AnyList. We orchestrate between them — we don't store copies of your personal data.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="icon" aria-hidden="true">&#x1F6AB;</span>
+            <div>
+              <h3>We never sell your data</h3>
+              <p>Your family's information is never shared with advertisers, data brokers, or anyone else. Period.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="icon" aria-hidden="true">&#x1F50C;</span>
+            <div>
+              <h3>Disconnect anytime</h3>
+              <p>You can remove any integration at any time. Disconnect your calendar? Your events are still right there in Google Calendar, untouched.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="icon" aria-hidden="true">&#x1F510;</span>
+            <div>
+              <h3>Encrypted communication</h3>
+              <p>All messages between you and your assistant are encrypted. Your WhatsApp conversations are protected by WhatsApp's end-to-end encryption.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cancellation Callout -->
+    <section>
+      <div class="container">
+        <div class="callout">
+          <p>What happens if you cancel? Your accounts are yours. We remove our access, and your data stays exactly where it is — in your calendar, your budget app, your grocery list. Nothing is deleted, nothing is lost.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="section-heading">Currently serving Reno and Northern Nevada</h2>
+        <p>We're starting local because we believe in doing this right. Every family gets personalized setup and ongoing support from someone who lives in your community.</p>
+        <form action="https://formspree.io/f/PLACEHOLDER" method="POST">
+          <input type="text" name="_gotcha" class="sr-only" tabindex="-1" autocomplete="off">
+          <label for="expand-email">Not in our area yet?</label>
+          <input type="email" id="expand-email" name="email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-primary">Notify Me When We Expand</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <div class="container">
+        <h2 class="section-heading">Get in touch</h2>
+        <p>Email: <a href="mailto:hello@sierracodeco.com">hello@sierracodeco.com</a></p>
+        <p>Or <a href="https://calendly.com/runourhouse/discovery">book a call</a> to chat about how we can help your family.</p>
       </div>
     </section>
 
     <!-- Empowered Image -->
     <section>
       <div class="container">
-        <img src="images/mom-on-the-go.jpg" alt="A mom confidently walking through a farmers market with her phone and toddler — organized, relaxed, and in control." class="page-image-wide" width="1792" height="1024" loading="lazy">
+        <img src="images/mom-on-the-go.jpg" alt="A mom walking through a grocery store parking lot with her phone and stroller — relaxed and in control of her day." class="page-image-wide" width="1792" height="1024" loading="lazy">
       </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
-        <h2>Ready to stop juggling?</h2>
-        <p>Book a free 20-minute call and see how Run Our House can give you your brain back.</p>
+        <h2>Ready to get your brain back?</h2>
+        <p>Book a free 20-minute discovery call. We'll learn about your family and show you how it works.</p>
         <a href="https://calendly.com/runourhouse/discovery" class="btn btn-primary">Book a Free Call</a>
       </div>
     </section>
